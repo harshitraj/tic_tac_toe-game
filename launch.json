@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "g++ - Build and Debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/tic_tac_toe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            // "setupCommands": [
+            //     {
+            //         "description": "Enable pretty-printing for gdb",
+            //         "text": "-enable-pretty-printing",
+            //         "ignoreFailures": true
+            //     }
+            // ],
+            "preLaunchTask": "build",
+            "miDebuggerPath": "/usr/bin/gdb", // Change this path if necessary
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "internalConsoleOptions": "openOnSessionStart",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
